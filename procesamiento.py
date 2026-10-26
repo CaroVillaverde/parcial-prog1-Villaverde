@@ -18,6 +18,9 @@ def calcular_promedio(parcial_1, parcial_2):
 
 #Calcular promedio general
 def calcular_promedio_general(promedio):
+    """ suma el promedio de cada alumno y lo divide por la cantidad de promedios que haya.
+        para dar un promedio general"""
+        
     acumulador = 0
     
     for i in range(len(promedio)):
@@ -28,8 +31,10 @@ def calcular_promedio_general(promedio):
     return promedio_general
 
 
-# Funcion calcula Mejor promedio 
+
 def calcular_maximo(promedio, nombres):
+    """ calcula el mejor promedio """
+    
     maximo = promedio[0]
     nombre_maximo = 0
     
@@ -41,8 +46,9 @@ def calcular_maximo(promedio, nombres):
     return maximo, nombres[nombre_maximo]
 
 
-#Funcion calcula peor promedio    
+
 def calcular_minimo(promedio, nombres):
+    """ calcula el peor promedio """
     minimo = promedio[0]
     nombre_minimo = 0
     
@@ -72,11 +78,9 @@ def calcular_condicion(promedio):
     return promociona, aprueba, desaprueba
 
 
-
-# Ranking 5 - Curso ordenado por promedio  - del mejor al peor
-# Ordenamiento burbuja 
-
 def ordenar_burbuja(promedio, nombres):
+    """  - Curso ordenado por promedio -del mejor al peor- Ordenamiento burbuja """
+    
     cantidad = len(promedio)
         
     for i in range(cantidad):
@@ -94,8 +98,9 @@ def ordenar_burbuja(promedio, nombres):
     return promedio, nombres
 
 
-#Invertir nombres
 def invertir_nombre(nombre_ingresado):
+    """ Invierte el nombre que se ingresa """
+    
     invertido = ""
     
     for i in range(len(nombre_ingresado)):
@@ -104,8 +109,8 @@ def invertir_nombre(nombre_ingresado):
     return invertido
 
 
-#Contar vocales
 def contar_vocales(nombre_ingresado):
+    """ Cuenta las vocales del nombre ingresado"""
     vocales = "aeiou"
     contador = 0
     
@@ -120,6 +125,7 @@ def contar_vocales(nombre_ingresado):
 
 #Buscar alumno
 def buscar_alumno(nombre_buscado, nombres, parcial_1, parcial_2, promedio):
+    """ Compara el nombre ingresado con la lista de nombres, si coincide muestra los datos del alumno"""
     coincide = False
 
     for i in range(len(nombres)):
