@@ -40,7 +40,7 @@ def calcular_maximo(promedio, nombres):
 
     return maximo, nombres[nombre_maximo]
 
- 
+
 #Funcion calcula peor promedio    
 def calcular_minimo(promedio, nombres):
     minimo = promedio[0]

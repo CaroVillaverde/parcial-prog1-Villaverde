@@ -1,21 +1,16 @@
 
-
-
-
 # Validar cantidad
-
-"""def validar_cantidad():
-    cantidad = 0
+def validar_cantidad():
     valido = False
     
     while not valido:
-        cantidad = int(input("Ingrese la cantidad de alumnos [Entre 1 y 30]: "))
-        if 1 <= cantidad <= 30:
+        cantidad_alumnos = int(input("Ingrese la cantidad de alumnos [Entre 1 y 30]: "))
+        if 1 <= cantidad_alumnos <= 30:
             valido = True
         else: 
             print("Error, ingrese un número entre 1 y 30:") 
     
-    return cantidad """
+    return cantidad_alumnos 
 
 
 # validar nombre
